@@ -11,6 +11,7 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+	return ( ( name != null ) && name.length > 3 && !name.includes(' ') );
 }
 
 function sayHello() {
@@ -22,3 +23,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+//следующему условию – имя не пустое, без пробелов, минимум 4 символа.
